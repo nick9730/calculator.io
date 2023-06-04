@@ -1,0 +1,55 @@
+body{
+  font-size: 20px;
+    font-family: 'Arial';
+    background: white;    }
+   
+    .grid{
+        position: absolute;
+       display: grid;
+       top: 10%;
+       left: 20%;
+       grid-template-rows: repeat(6,80px);
+       grid-template-columns:  repeat(4,80px);
+       border: solid 1px black;
+       margin: 0;
+       padding: 0;
+    }
+
+.grid button {
+    margin: 0;
+   border: solid 1px rgba(0, 0, 0, 0.263);
+     color:black;
+     font-size: 1rem;
+}
+.output{
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+        display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2rem;
+    
+
+}
+.previous{
+   
+    color: rgba(164, 113, 113, 0.562);
+   
+    
+}
+.current{
+    color: white;
+    margin-right: 20px;
+}
+ .rectangle {
+    grid-column: span 2;
+    
+  }
+
+
+.number{
+    background-color: rgba(0, 0, 0, 0.409);
+}
+.operator{
+    background-color: rgb(105, 96, 96);
+}
